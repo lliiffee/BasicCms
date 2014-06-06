@@ -1,0 +1,10 @@
+CREATE TABLE `tb_content` (
+  `content_id` int(11) NOT NULL AUTO_INCREMENT,
+  `content_type` varchar(45) DEFAULT NULL,
+  `content_title` varchar(200) DEFAULT NULL,
+  `sum_img` varchar(200) DEFAULT NULL,
+  `content_link` varchar(200) DEFAULT NULL,
+  `sum_desc` text,
+  `full_content` text,
+  PRIMARY KEY (`content_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

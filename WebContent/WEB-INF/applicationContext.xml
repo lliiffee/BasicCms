@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+     
+<!--	for test -->
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+
+<!-- 
+ <bean id="myProps" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+  <property name="location" value="classpath:displaysetting.properties"/>
+</bean>
+  -->
+	<bean id="dataSource" class="org.apache.ibatis.datasource.pooled.PooledDataSource" destroy-method="forceCloseAll">
+		<property name="driver" value="${jdbc.driver}"/>
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+		<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+
+ <bean id="sqlSessionFactory_cms" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="typeAliasesPackage" value="com.fung.cms.model"/>
+	</bean>
+<!-- 
+	<bean id="dataSource2" class="org.apache.ibatis.datasource.pooled.PooledDataSource" destroy-method="forceCloseAll">
+		<property name="driver" value="${jdbc.driver}"/>
+		<property name="url" value="${jdbc.url2}"/>
+		<property name="username" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	<bean id="transactionManager2" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource2"/>
+	</bean>
+		<bean id="sqlSessionFactory_shop" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource2"/>
+		<property name="typeAliasesPackage" value="com.bbf.mms.report.model"/>
+	</bean>
+ -->	
+
+	
+
+ 
+
+<!-- 
+		 
+<bean id="dataSource_jndi_mms" class="org.springframework.jndi.JndiObjectFactoryBean">   
+     	<property name="jndiName" value="java:comp/env/jdbc/mms"/> 
+	</bean>
+	
+<bean id="dataSource_jndi_slave" class="org.springframework.jndi.JndiObjectFactoryBean">   
+     	<property name="jndiName" value="java:comp/env/jdbc/shop"/> 
+	</bean>
+	
+	
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource_jndi_mms"/>
+	</bean>
+<bean id="transactionManager2" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource_jndi_slave"/>
+	</bean>
+	
+	 
+	<bean id="sqlSessionFactory_mms" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource_jndi_mms"/>
+		<property name="typeAliasesPackage" value="com.bbf.mms.model"/>
+	</bean>
+	
+	<bean id="sqlSessionFactory_shop" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource_jndi_slave"/>
+		<property name="typeAliasesPackage" value="com.bbf.mms.report.model"/>
+	</bean>
+ -->	
+	
+	<!-- enable component scanning (beware that this does not enable mapper scanning!)  -->
+	<context:component-scan base-package="com.fung.cms.service"/>
+   
+	<!-- enable autowire -->
+	<context:annotation-config/>
+
+	<!-- enable transaction demarcation with annotations -->
+	<tx:annotation-driven/>
+ 
+	<!-- scan for mappers and let them be autowired -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory_cms"/>
+		<property name="basePackage" value="com.fung.cms.dao"/>
+	</bean>
+  
+
+</beans>

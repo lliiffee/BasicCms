@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fung.cms.dao.ContentMapper" >
+   <resultMap id="BaseResultMap" type="com.fung.cms.model.Content">
+    
+    <id column="content_id" jdbcType="INTEGER" property="contentId" />
+    <result column="content_type" jdbcType="VARCHAR" property="contentType" />
+    <result column="content_title" jdbcType="VARCHAR" property="contentTitle" />
+    <result column="sum_img" jdbcType="VARCHAR" property="sumImg" />
+    <result column="content_link" jdbcType="VARCHAR" property="contentLink" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.fung.cms.model.Content">
+    <result column="sum_desc" jdbcType="LONGVARCHAR" property="sumDesc" />
+    <result column="full_content" jdbcType="LONGVARCHAR" property="fullContent" />
+  </resultMap>
+  
+  <sql id="Base_Column_List">
+    content_id, content_type, content_title, sum_img, content_link
+  </sql>
+  <sql id="Blob_Column_List">
+    sum_desc, full_content
+  </sql>
+  
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_content
+    where content_id = #{contentId,jdbcType=INTEGER}
+  </select>
+  
+  <insert id="insert" parameterType="com.fung.cms.model.Content">
+    insert into tb_content ( content_type, content_title, 
+      sum_img, content_link, sum_desc, 
+      full_content)
+    values (#{contentType,jdbcType=VARCHAR}, #{contentTitle,jdbcType=VARCHAR}, 
+      #{sumImg,jdbcType=VARCHAR}, #{contentLink,jdbcType=VARCHAR}, #{sumDesc,jdbcType=LONGVARCHAR}, 
+      #{fullContent,jdbcType=LONGVARCHAR})
+  </insert>
+  
+  
+</mapper>
