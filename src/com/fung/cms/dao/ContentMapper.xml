@@ -30,6 +30,17 @@
     where content_id = #{contentId,jdbcType=INTEGER}
   </select>
   
+  
+  <select id="selectPageList"  resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_content
+   
+  </select>
+  
+  
   <insert id="insert" parameterType="com.fung.cms.model.Content">
     insert into tb_content ( content_type, content_title, 
       sum_img, content_link, sum_desc, 
