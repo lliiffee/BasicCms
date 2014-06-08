@@ -35,42 +35,42 @@ System.out.println(request.getParameter("detail_desc"));
   <body>
   
  
-  <form action="index.jsp">
+  <form action="cmadm/addContent.do">
   
    <fieldset>
    
    <section>
-      <label for="content_type">类型：</label>
-      <select id="content_type"> 
+      <label for="contentType">类型：</label>
+      <select id="contentType" name="contentType"> 
           <option value="0">资讯</option>
           <option value="1">产品</option>
       </select>
      </section>
      
     <section>
-      <label for="content_title">文章主题：</label>
-      <input type="text" id="content_title" name="content_title" value"" />
+      <label for="contentTitle">文章主题：</label>
+      <input type="text" id="contentTitle" name="contentTitle" value"" />
      </section>
      
       <section>
       <label>文章主题图片：</label>
-       <input  type="button" value="上传图片">
+       <input  type="button" value="上传图片" onclick='return $EDITORUI["edui152"]._onClick();' />
      </section>
     
     <section>
       <label>链接：</label>
-       <input type="text" id="content_title" name="content_title" value"" />
+       <input type="text" id="contentLink" name="contentLink" value"" />
      </section>
      
       <section>
-      <label for="content_title">概述内容：</label>
-      <textarea > </textarea>
+      <label for="sumDesc">概述内容：</label>
+      <textarea id="sumDesc" name="sumDesc"> </textarea>
      </section>
                                  
    </fieldset>
   <label>文章内容：</label>
     <span  id="detail_area" style="height:auto;">
-		<script id="detail_desc" name="detail_desc" type="text/plain" style="width:654px;height:500px;">
+		<script id="fullContent" name="fullContent" type="text/plain" style="width:654px;height:500px;">
 				                                                          
    	  </script>
 
@@ -86,7 +86,7 @@ System.out.println(request.getParameter("detail_desc"));
   <script type="text/javascript">
 		    //实例化编辑器
 		    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-		    UE.getEditor('detail_desc');
+		    UE.getEditor('fullContent');
  </script>
  
 		    

@@ -20,15 +20,29 @@ public class CmsAdmController {
 
 	@Autowired
 	private ContentService contentService;
-	@RequestMapping(value="hello")
-	public ModelAndView sayHello(HttpServletRequest request,HttpServletResponse response ){
+	@RequestMapping(value="addContent")
+	public ModelAndView addContent(HttpServletRequest request,HttpServletResponse response ){
 	 
-		Map requestParams = request.getParameterMap();
-	  	ModelAndView mv = new ModelAndView("hello","say","hello");
+	//	Map requestParams = request.getParameterMap();
+		//content_title
+		//content_link
+		
+		String contentType=request.getParameter("contentType");
+		String contentTitle=request.getParameter("contentTitle");
+		String sumImg=request.getParameter("sumImg");
+		String contentLink=request.getParameter("contentLink");
+		String sumDesc=request.getParameter("sumDesc");
+		String fullContent=request.getParameter("fullContent");
+		
+		
+	  	ModelAndView mv = new ModelAndView("success","say","hello");
 	  	 Content c=new Content();
-	  	 c.setContentLink("test");
-	  	c.setContentTitle("test");
-	  	c.setContentType("test");
+	  	 c.setSumImg(sumImg);
+	  	 c.setSumDesc(sumDesc);
+	  	 c.setFullContent(fullContent);
+	  	 c.setContentLink(contentLink);
+	  	c.setContentTitle(contentTitle);
+	  	c.setContentType(contentType);
 	  	this.contentService.insert(c);
 	    	 return mv;
 	    	 
