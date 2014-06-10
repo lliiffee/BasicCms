@@ -135,141 +135,14 @@
 
 <article class="posts" id="posts-1">
 	
-	<div class="post item">
-					<div class="img">
-						<a href="http://fuckingyoung.es/mario-keine-fw14-lookbook/"><img width="300" height="449" src="http://fuckingyoung.es/wp-content/uploads/2014/05/Mario-Keine-FW14-Lookbook_fy1-300x449.jpg" class="attachment-medium wp-post-image" alt="Mario-Keine-FW14-Lookbook_fy1" /></a>
-					</div>
-					<h2><a href="http://fuckingyoung.es/mario-keine-fw14-lookbook/">Mario Keine Fall/Winter 2014 Lookbook</a></h2>
-					
-					<p>
-						<a href="https://www.facebook.com/mario.keine" target="_blank">Mario Keine</a> presents the lookbook for his Fall/Winter 2014 collection entitled &#8220;in_progress&#8220;, which he developed for his studies in Fashion Design and Communication.
-					</p>
-					<div class="meta">
-						<em class="date">8 May</em> — <a href="http://fuckingyoung.es/category/collection/" title="View all posts in Collection" rel="category tag">Collection</a>. <a href="http://fuckingyoung.es/category/collection/fall-winter-colecciones/" title="View all posts in Fall/Winter" rel="category tag">Fall/Winter</a>. <a href="http://fuckingyoung.es/category/collection/introducing/" title="View all posts in Introducing" rel="category tag">Introducing</a>
-					</div>
-				</div>
-
-		<div class="post item">
-					<h2><a href="http://fuckingyoung.es/category/video/">F.Y. video</a></h2>
-					<div class="img">
-						<a href="http://fuckingyoung.es/live-streaming-michael-kors-imran-amed-mkshanghai/"><img width="300" height="375" src="http://fuckingyoung.es/wp-content/uploads/2014/05/24723981-300x375.jpg" class="attachment-medium wp-post-image" alt="24723981" /></a>
-					</div>
-					<h3><a href="http://fuckingyoung.es/live-streaming-michael-kors-imran-amed-mkshanghai/">LIVE STREAMING! Michael Kors &#038; Imran Amed #MKShanghai</a></h3>
-					</p>
-					<p>
-						TODAY you can follow this exclusive live streaming, where Michael Kors talks with fashion guru Imran Amed , founder of Business from Fashion. 45 minutes interview from a spectacular location in the city of Shanghai. Michael and Emran talk, among other&#8230; <a href="http://fuckingyoung.es/live-streaming-michael-kors-imran-amed-mkshanghai/">&raquo;</a>
-					</p>
-					<div class="meta">
-						<em class="date">8 May.</em> - <a href="http://fuckingyoung.es/category/video/" title="View all posts in Video" rel="category tag">Video</a></a>
-					</div>
-				</div>
-
-				<div class="post item">
-					<div class="img">
-						<a href="http://fuckingyoung.es/dane-dehaan-steven-klein/"><img width="300" height="390" src="http://fuckingyoung.es/wp-content/uploads/2014/05/Dane-DeHaan-by-Steven-Klein_fy1-300x390.jpg" class="attachment-medium wp-post-image" alt="Dane-DeHaan-by-Steven-Klein_fy1" /></a>
-					</div>
-					<h2><a href="http://fuckingyoung.es/dane-dehaan-steven-klein/">Dane DeHaan by Steven Klein</a></h2>
-					 
-					<p>
-						Actor <a href="http://fuckingyoung.es/?s=Dane+DeHaan" target="_blank">Dane DeHaan</a> captured by the lens of <a href="http://fuckingyoung.es/?s=Steven+Klein" target="_blank">Steven Klein</a> and styled with pieces from Prada, Emporio Armani, Saint Laurent and more, for <a href="http://www.interviewmagazine.com/film/dane-dehaan-1" target="_blank">Interview</a> magazine.
-					</p>
-					<div class="meta">
-						<em class="date">8 May</em> — <a href="http://fuckingyoung.es/category/editorial/" title="View all posts in Editorial" rel="category tag">Editorial</a>
-					</div>
-				</div>
-
-				<div class="post item">
-					<div class="img">
-						<a href="http://goo.gl/Euqz6h" target="_blank"><img src="http://fuckingyoung.es/wp-content/uploads/2014/05/davidelfin-lat.gif" /></a>
-					</div>
-					<span class="ad-ttl">Advertisement</span>
-				</div>
-
-					<div class="post item">
-					<div class="img">
-						<a href="http://fuckingyoung.es/abiah-hostvedt-mark-lebon/"><img width="300" height="397" src="http://fuckingyoung.es/wp-content/uploads/2014/05/Abiah-Hostvedt-by-Mark-Lebon_fy5-300x397.jpg" class="attachment-medium wp-post-image" alt="Abiah-Hostvedt-by-Mark-Lebon_fy5" /></a>
-					</div>
-					<h2><a href="http://fuckingyoung.es/abiah-hostvedt-mark-lebon/">Abiah Hostvedt by Mark Lebon</a></h2>
-				 
-					<p>
-						Abiah Hostvedt lensed by <a href="http://marklebon.com/" target="_blank">Mark Lebon</a> and styled with pieces from Versace, Dolce &amp; Gabbana, Jil Sander, Dior Homme and more, for the latest issue of <a href="http://www.manabouttown.tv/" target="_blank">Man About Town</a>.
-					</p>
-					<div class="meta">
-						<em class="date">8 May</em> — <a href="http://fuckingyoung.es/category/editorial/" title="View all posts in Editorial" rel="category tag">Editorial</a>
-					</div>
-				</div>
-
-					<div class="post item">
-					<div class="img">
-						<a href="http://fuckingyoung.es/green-stuff/"><img width="300" height="199" src="http://fuckingyoung.es/wp-content/uploads/2014/05/green-stuff_fy2-300x199.jpg" class="attachment-medium wp-post-image" alt="green-stuff_fy2" /></a>
-					</div>
-					<h2><a href="http://fuckingyoung.es/green-stuff/">green, stuff</a></h2>
-					 
-						Louis at Independent Men captured by <a href="http://luciamoretti.com" target="_blank">Lucia Moretti</a> and styled by <a href="http://chiaralanzani.com" target="_blank">Chiara Lanzani</a> with pieces from Emanuela Luzzi, in exclusive for <a href="http://fuckingyoung.es/category/exclusive/" target="_blank">Fucking Young! Online</a>.
-					</p>
-					<div class="meta">
-						<em class="date">8 May</em> — <a href="http://fuckingyoung.es/category/editorial/" title="View all posts in Editorial" rel="category tag">Editorial</a>. <a href="http://fuckingyoung.es/category/exclusive/" title="View all posts in Exclusive" rel="category tag">Exclusive</a>
-					</div>
-				</div>
-				
-				<div class="post item">
-				<div class="img">
-					<a href="http://fuckingyoung.es/green-stuff/"><img width="300" height="199" src="http://fuckingyoung.es/wp-content/uploads/2014/05/green-stuff_fy2-300x199.jpg" class="attachment-medium wp-post-image" alt="green-stuff_fy2" /></a>
-				</div>
-				<h2><a href="http://fuckingyoung.es/green-stuff/">green, stuff</a></h2>
-				</p>
-				</p>
-				</p>
-				</p>
-				</p>
-				<p>
-					Louis at Independent Men captured by <a href="http://luciamoretti.com" target="_blank">Lucia Moretti</a> and styled by <a href="http://chiaralanzani.com" target="_blank">Chiara Lanzani</a> with pieces from Emanuela Luzzi, in exclusive for <a href="http://fuckingyoung.es/category/exclusive/" target="_blank">Fucking Young! Online</a>.
-				</p>
-				<div class="meta">
-					<em class="date">8 May</em> — <a href="http://fuckingyoung.es/category/editorial/" title="View all posts in Editorial" rel="category tag">Editorial</a>. <a href="http://fuckingyoung.es/category/exclusive/" title="View all posts in Exclusive" rel="category tag">Exclusive</a>
-				</div>
-			</div>
-
-				<div class="post item">
-				<div class="img">
-					<a href="http://fuckingyoung.es/hommes-et-chiens/"><img width="300" height="238" src="http://fuckingyoung.es/wp-content/uploads/2014/05/Hommes-et-Chiens_fy1-300x238.jpg" class="attachment-medium wp-post-image" alt="Hommes-et-Chiens_fy1" /></a>
-				</div>
-				<h2><a href="http://fuckingyoung.es/hommes-et-chiens/">Hommes et Chiens</a></h2>
-				</p>
-				</p>
-				</p>
-				</p>
-				</p>
-				<p>
-					Jules Raynal, Lucas Mikulski and Pierre Gautier snapped by <a href="http://philippejarrigeon.com/" target="_blank">Philippe Jarrigeon</a> and styled by <a href="http://www.frankreps.com/stylists/emilie-kareh/print" target="_blank">Emilie Kareh</a> with pieces from Calvin Klein, Raf Simons, American Apparel and more, for <a href="http://www.lemagazinedouble.com/" target="_blank">Double</a> magazine.
-				</p>
-				<div class="meta">
-					<em class="date">8 May</em> — <a href="http://fuckingyoung.es/category/editorial/" title="View all posts in Editorial" rel="category tag">Editorial</a>
-				</div>
-			</div>
-
-				<div class="post item">
-				<div class="img">
-					<a href="http://fuckingyoung.es/prada-ss14-eyewear-campaign/"><img width="300" height="387" src="http://fuckingyoung.es/wp-content/uploads/2014/05/Prada-SS14-Eyewear-Campaign_fy1-300x387.jpg" class="attachment-medium wp-post-image" alt="Prada-SS14-Eyewear-Campaign_fy1" /></a>
-				</div>
-				<h2><a href="http://fuckingyoung.es/prada-ss14-eyewear-campaign/">Prada Spring/Summer 2014 Eyewear Campaign</a></h2>
-				</p>
-				</p>
-				</p>
-				<p>
-					The Amazing Spider-Man 2 actor <a href="http://fuckingyoung.es/?s=Dane+DeHaan" target="_blank">Dane DeHaan</a> fronts the Spring/Summer 2014 eyewear campaign of <a href="http://www.prada.com/" target="_blank">Prada</a>, photographed by <a href="http://fuckingyoung.es/?s=Annie+Leibovitz" target="_blank">Annie Leibovitz</a>.
-				</p>
-				<div class="meta">
-					<em class="date">8 May</em> — <a href="http://fuckingyoung.es/category/campaigns/" title="View all posts in Campaigns" rel="category tag">Campaigns</a>. <a href="http://fuckingyoung.es/category/collection/eyewear/" title="View all posts in Eyewear" rel="category tag">Eyewear</a>. <a href="http://fuckingyoung.es/category/campaigns/spring-summer/" title="View all posts in Spring/Summer" rel="category tag">Spring/Summer</a>
-				</div>
-			</div>
+	
 			
-		<c:when test="${ not empty pageList}"> 
+		<c:if test="${ not empty pageList}"> 
      
 			    <c:forEach var="ct" items="${pageList}" > 
 					    <div class="post item">
 						<div class="img">
-							<a href="${ct.contentLink}"><img   src="${ct.sumImg }" class="attachment-medium wp-post-image" alt="Prada-SS14-Eyewear-Campaign_fy1" /></a>
+							<a href="${ct.contentLink}"><img width="300" height="auto" src="${ct.sumImg}" class="attachment-medium wp-post-image" alt="Prada-SS14-Eyewear-Campaign_fy1" /></a>
 						</div>
 						<h2><a href="${ct.contentLink}">${ct.contentTitle}</a></h2>
 						</p>
@@ -282,8 +155,10 @@
 							<em class="date">meta 8 May</em> — <a href="http://fuckingyoung.es/category/campaigns/" title="View all posts in Campaigns" rel="category tag">Campaigns</a>. <a href="http://fuckingyoung.es/category/collection/eyewear/" title="View all posts in Eyewear" rel="category tag">Eyewear</a>. <a href="http://fuckingyoung.es/category/campaigns/spring-summer/" title="View all posts in Spring/Summer" rel="category tag">Spring/Summer</a>
 						</div>
 					</div>
+					
+					
 			    </c:forEach>
-	    </c:when>
+	    </c:if>
 			
 			
 		</article>
