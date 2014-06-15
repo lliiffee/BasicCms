@@ -8,9 +8,10 @@
     <result column="content_title" jdbcType="VARCHAR" property="contentTitle" />
     <result column="sum_img" jdbcType="VARCHAR" property="sumImg" />
     <result column="content_link" jdbcType="VARCHAR" property="contentLink" />
+    <result column="sum_desc" jdbcType="LONGVARCHAR" property="sumDesc" />
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.fung.cms.model.Content">
-    <result column="sum_desc" jdbcType="LONGVARCHAR" property="sumDesc" />
+    
     <result column="full_content" jdbcType="LONGVARCHAR" property="fullContent" />
   </resultMap>
   
@@ -21,22 +22,35 @@
     sum_desc, full_content
   </sql>
   
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    ,
-    <include refid="Blob_Column_List" />
+   
     from tb_content
     where content_id = #{contentId,jdbcType=INTEGER}
   </select>
   
   
-  <select id="selectPageList"  resultMap="ResultMapWithBLOBs">
+  <select id="selectPageList"  resultMap="BaseResultMap" parameterType="java.util.Map" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_content limit #{pageNo,jdbcType=BIGINT} , #{rowsNum,jdbcType=BIGINT}
+   
+  </select>
+  
+   <select id="getPage"  resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
     ,
     <include refid="Blob_Column_List" />
-    from tb_content
+    from tb_content where content_id = #{contentId,jdbcType=INTEGER}
+   
+  </select>
+  
+  <select id="getTotalCnt" resultType="java.lang.Long" >
+    select 
+   count(1)
+    from tb_content 
    
   </select>
   

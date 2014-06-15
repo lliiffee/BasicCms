@@ -14,11 +14,7 @@
 
 	</head>
 
-	<body>
-
-
-
-		
+	<body>	
 		
 <header>
 			<div class="container">
@@ -102,23 +98,7 @@
 		
 		
 <div class="fybg">		
-	<!--
-		<div class="visual">
-				<div class="block">
-					<div class="flexslider" id="flexslider-1">
-						<ul class="slides">
-							
-						</ul>
-						<ol class="flex-control-nav flex-control-paging">
-							
-						</ol>
-						<ul class="flex-direction-nav">
-							
-						</ul>
-					</div>
-				</div>
-			</div>
-			-->			
+	 
 			
 			<div class="filter-panel">
 				<div id="filter-sticky-wrapper" class="sticky-wrapper" style="height: 76px;">
@@ -137,76 +117,13 @@
 	
 	
 			
-		<c:if test="${ not empty pageModel.pageList}"> 
-     
-			    <c:forEach var="ct" items="${pageModel.pageList}" > 
-					    <div class="post item">
-						<div class="img">
-							<a href="${ct.contentLink}"><img width="300" height="auto" src="${ct.sumImg}" class="attachment-medium wp-post-image" alt="Prada-SS14-Eyewear-Campaign_fy1" /></a>
-						</div>
-						<h2><a href="${ct.contentLink}">${ct.contentTitle}</a></h2>
-						</p>
-						</p>
-						</p>
-						<p>
-							 ${ct.fullContent}
-						</p>
-						<div class="meta">
-							<em class="date">meta 8 May</em> — <a href="http://fuckingyoung.es/category/campaigns/" title="View all posts in Campaigns" rel="category tag">Campaigns</a>. <a href="http://fuckingyoung.es/category/collection/eyewear/" title="View all posts in Eyewear" rel="category tag">Eyewear</a>. <a href="http://fuckingyoung.es/category/campaigns/spring-summer/" title="View all posts in Spring/Summer" rel="category tag">Spring/Summer</a>
-						</div>
-					</div>
-					
-					
-			    </c:forEach>
+		<c:if test="${ not empty content}"> 
+             ${content.fullContent}
 	    </c:if>
 			
 			
 		</article>
 		
-			<div class="page-control">
-				<ul class="paging">
-				
-				<c:if test="${ pageModel.totalPages>1}">
-				<c:forEach begin='1' end='${pageModel.totalPages}' var="i">
-					 
-					<c:choose>
-					  <c:when test="${ pageModel.currentPage == i }">
-					  <li class="active">
-						<a href="/c/home.do?page_num=${i}">${i}</a>
-						</li>
-					</c:when>
-					<c:otherwise>
-					 <li >
-						<a href="/c/home.do?page_num=${i}"`>${i}</a>
-						</li>
-					</c:otherwise>
-					</c:choose>
-				</c:forEach> 
-					
-				</c:if>
-				
-				</ul>
-				<div class="r-part">
-					<div class="page-search">
-						<form id="pagesearch" action="http://fuckingyoung.es/page/2/">
-							<div class="text">
-								<input type="text" value="Type page / search...">
-							</div>
-						</form>
-					</div>
-
-					<ul class="paging">
-						<li>
-							…
-						</li>
-						<li>
-							<a href="http://fuckingyoung.es/page/511/">511</a>
-						</li>
-					</ul>
-				</div>
-
-				<span class="next-page"><a href="http://fuckingyoung.es/page/2/">Next Page »</a></span>
-			</div>
 			
 	</div>	
 

@@ -1,6 +1,7 @@
 package com.fung.cms.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -20,8 +21,15 @@ public class ContentServiceImpl implements ContentService {
 		return this.contentMapper.insert(record);
 	}
 	
-	public List<Content> selectPageList(){
-		return this.contentMapper.selectPageList();
+	public List<Content> selectPageList(Map pageParams){
+		return this.contentMapper.selectPageList(pageParams);
 	}
 
+	public long getTotalCnt(){
+		return this.contentMapper.getTotalCnt();
+	}
+	
+	public Content getPage(int contentId){
+		return this.contentMapper.getPage(contentId);
+	}
 }

@@ -26,11 +26,16 @@ public class CmsAdmController {
 	//	Map requestParams = request.getParameterMap();
 		//content_title
 		//content_link
-		
+		//contentType=0 product , =1 article
 		String contentType=request.getParameter("contentType");
+		String contentLink="";
+		if("0".equals(contentType))
+		{
+			contentLink=request.getParameter("contentLink");
+		}
 		String contentTitle=request.getParameter("contentTitle");
 		String sumImg=request.getParameter("sumImg");
-		String contentLink=request.getParameter("contentLink");
+		
 		String sumDesc=request.getParameter("sumDesc");
 		String fullContent=request.getParameter("fullContent");
 		
